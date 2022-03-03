@@ -1,0 +1,35 @@
+img
+{
+    height: 10vmin;
+    width: 15%;
+    align-items:center;  
+}
+.nav
+{
+    background-color: rgb(23, 41, 46);
+    color: rgb(16, 26, 26);
+  
+}
+.c
+{
+    margin-left: 5cm;
+    padding-top: 5mm;
+    color: rgb(134, 121, 112);
+    height: 10px;
+    width: 50%; 
+    text-align: center; 
+}
+.a
+{
+   margin-left:15cm;
+    padding: 1px;;
+    color: rgb(15, 83, 61);
+}   
+.b
+{
+  
+    padding: 1px;
+    column-fill: auto;
+    color: rgb(37, 65, 55);
+
+}
