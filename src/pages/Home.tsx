@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
 import React from 'react'
+import '../Styles/Style.css'
+
 
 interface IHomeProps {
   
@@ -7,8 +9,9 @@ interface IHomeProps {
  
 const IHome: FunctionComponent<IHomeProps> = () => {
   return (
-    <div>
-      <h1>  Home page</h1>
+    <div className=" main" > 
+      <h1 className="h1"> This is Home page</h1>
+      <p className='p' > Introduction to TypeScript React</p>
      
     </div>
     );

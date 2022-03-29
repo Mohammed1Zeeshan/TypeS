@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About page nav and AddUser page nav button 1`] = `true`;
+
+exports[`About page nav and AddUser page nav button 2`] = `true`;
+
+exports[`Home page nav button 1`] = `true`;
+
+exports[`test 1`] = `true`;

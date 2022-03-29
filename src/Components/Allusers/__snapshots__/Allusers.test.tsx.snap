@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow Delete 1`] = `[MockFunction]`;
+
+exports[`shallow shallow should render the component correctly 1`] = `
+<div
+  className="Alluser"
+>
+  <table
+    className="table border table-striped"
+  >
+    <thead
+      className="thead-dark"
+    >
+      <tr>
+        <th
+          className="tab"
+          key="key"
+        >
+          KEY
+        </th>
+        <th
+          className="tab"
+          key="value"
+        >
+          VALUE
+        </th>
+        <th
+          className="tab"
+          key="action"
+        >
+          ACTION
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;

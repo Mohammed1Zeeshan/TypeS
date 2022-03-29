@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow shallow should render the component correctly 1`] = `
+<div
+  className="constainer"
+>
+  <h1>
+    Add User
+  </h1>
+  <div
+    className="w-75 mx-auto shadow p-5"
+  >
+    <Form>
+      <div
+        className="form-group"
+      >
+        <Input
+          className="form-control form-control-lg"
+          name="Key"
+          onChange={[Function]}
+          placeholder="enter Key"
+          type="text"
+          value=""
+        />
+      </div>
+    </Form>
+    <Form>
+      <div
+        className="form-group"
+      >
+        <Input
+          className="form-control form-control-lg"
+          name="Value"
+          onChange={[Function]}
+          placeholder="enter Value"
+          type="text"
+          value=""
+        />
+      </div>
+    </Form>
+    <Button
+      active={false}
+      disabled={false}
+      onClick={[Function]}
+      variant="primary"
+    >
+      Add
+    </Button>
+  </div>
+</div>
+`;

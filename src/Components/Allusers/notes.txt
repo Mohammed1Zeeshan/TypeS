@@ -1,0 +1,5 @@
+ 
+// we can use regular id but its bad practise so we use component name as id thats for functionaly of projects
+data-testid='componentname'
+
+next we have to use this where we want to render this component 

@@ -7,12 +7,13 @@ import './User.css';
 
 function User() {
 
-    const [user,setUser]=useState({id:'',Key:'',Value:''})
+    const [user,setUser]=useState({id:'',key:'',value:''})
     const {id} : {id:string} =useParams();
     useEffect(()=>{loaduser();},[])
     const loaduser=async ()=>
     {
-        const res=await axios.get(`http://localhost:3005/users/${id}`);setUser(res.data)
+        //const res=await axios.get(`http://localhost:3005/users/${id}`);setUser(res.data)
+        const res=await axios.get(`https://localhost:44330/api/User/users/${id}`);setUser(res.data)
     }
 
   return (
@@ -22,8 +23,8 @@ function User() {
                  <Card>
                      <CardBody className='User'>
                          <CardTitle><h1>Details of User {user.id}</h1></CardTitle>
-                         <CardTitle>{user.Key}</CardTitle>
-                         <CardTitle>{user.Value}</CardTitle>
+                         <CardTitle>{user.key}</CardTitle>
+                         <CardTitle>{user.value}</CardTitle>
                          <CardSubtitle>
                          <Link to={`/users/Edit/${id}`}><button className='btn btn-primary'>Edit</button> </Link>
                              <Button > Cancle</Button>

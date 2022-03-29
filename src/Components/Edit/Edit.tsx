@@ -11,10 +11,11 @@ function Edit()
   const history=useHistory()
   
   const [user,setUser]=useState({
-      Key:'',
-      Value:''
+      
+      key:'',
+      value:''
   })
-  const {Key,Value}=user;
+  const {key,value}=user;
   const {id} : {id:string} =useParams();
 
   const onInputChange =(e: React.ChangeEvent<HTMLInputElement>)=>{
@@ -24,14 +25,18 @@ function Edit()
 
   const Submit= async (e: { preventDefault: () => void; })=>{
         e.preventDefault();       
-        await axios.put(`http://localhost:3005/users/${id}`,user)
-        history.push('/')       
+        //await axios.put(`http://localhost:3005/users/${id}`,user)
+        await axios.put(`https://localhost:44330/api/User/editStu/${id}`,user)
+        history.push('')       
   }
   
   useEffect(()=>{loaduser()},[])
 
   const loaduser=async ()=>{ 
-      const res=await axios.get(`http://localhost:3005/users/${id}`);
+    //  const res=await axios.get(`http://localhost:3005/users/${id}`);
+      
+      const res=await axios.get(`https://localhost:44330/api/User/users/${id}`);
+
       console.log(res.data)
       setUser(res.data)
   }
@@ -43,12 +48,12 @@ function Edit()
     <h2>Update user</h2>
     <Form>
     <div className='form-group'>
-    <Input type='text'  placeholder="enter key" name="Key" className='form-control form-control-lg'
-    value={Key} onChange={e=>onInputChange(e)}></Input>
+    <Input type='text'  placeholder="enter key" name="key" className='form-control form-control-lg'
+    value={key} onChange={e=>onInputChange(e)}></Input>
     </div>
     <div className='form-group'> 
-    <Input type='text'  placeholder="enter value" name="Value" className='form-control form-control-lg'
-     value={Value} onChange={e=>onInputChange(e)} ></Input>
+    <Input type='text'  placeholder="enter value" name="value" className='form-control form-control-lg'
+     value={value} onChange={e=>onInputChange(e)} ></Input>
     </div>
     <Button  onClick={Submit}>Update</Button>
     </Form>

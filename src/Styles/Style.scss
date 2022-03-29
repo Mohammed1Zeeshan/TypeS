@@ -1,0 +1,35 @@
+
+@import '../Variables/Variable.scss';
+
+
+.h1
+{
+    background-color: $Titlebackground;
+    color: $textcolor;
+    font-family: $Titlefont;
+
+    
+}
+
+.p
+{
+   
+    color:$textcolor ;
+    font-family:$Pargraphfont;
+    text-align: left;
+}
+
+
+.main
+{
+    
+    height: 100vh;
+    color:$textcolor ;
+
+}
+.App {
+    text-align: center;
+    background-color: rgb(230, 204, 171);
+    color: rgb(43, 33, 53);
+    // background-image: url('D:/AugmentoLabs/TypescriptReact/tsReact01/src/Components/image/logo.png'); 
+  }

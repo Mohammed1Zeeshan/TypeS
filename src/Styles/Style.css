@@ -1,0 +1,23 @@
+.h1 {
+  background-color: #7c5017;
+  color: rgba(16, 101, 172, 0.829);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.p {
+  color: rgba(16, 101, 172, 0.829);
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+.main {
+  height: 100vh;
+  color: rgba(16, 101, 172, 0.829);
+}
+
+.App {
+  text-align: center;
+  background-color: #e6ccab;
+  color: #2b2135;
+}
+/*# sourceMappingURL=Style.css.map */
